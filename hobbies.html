@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies - Nadrah Izyan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /* Image Gallery Styles */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery figure {
+            width: 200px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .gallery a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            filter: brightness(1.1) contrast(1.05);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery figcaption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* Section Images Styles */
+        .section-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .section-images figure {
+            width: 180px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .section-images a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .section-images img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            filter: brightness(1.1) contrast(1.05);
+        }
+
+        .section-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .section-images figcaption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* Content Box Styles */
+        .note {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .note h2 {
+            margin-top: 0;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .note p {
+            line-height: 1.8;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        /* Mobile Responsive */
+        @media(max-width: 600px) {
+            .gallery figure {
+                width: 45%;
+            }
+
+            .gallery img {
+                height: 45vw;
+            }
+
+            .section-images figure {
+                width: 45%;
+            }
+
+            .section-images img {
+                height: 45vw;
+            }
+
+            .lightbox-prev,
+            .lightbox-next {
+                font-size: 20px;
+                padding: 5px;
+            }
+
+            .lightbox-close {
+                font-size: 30px;
+                right: 15px;
+                top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Hobbies & Interests</h1>
+    <p>Things I love doing in my free time</p>
+</header>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about_me.html">About</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="family.html">Family</a>
+    <a href="cat.html">Cat</a>
+    <a href="email.html">Contact</a>
+</nav>
+
+<main>
+    <section class="note">
+        <h2>📸 Capturing Life's Simple Joys</h2>
+        <p>I love capturing moments and emotions through photography. Whether it's landscapes, everyday objects, or candid moments, photography helps me see the beauty in the world around me. Some of my favorite subjects include cafes, food, nature, and everyday moments that tell a story.</p>
+    </section>
+
+    <section class="gallery">
+        <figure>
+            <a href="hobby/cafe.jpg">
+                <img src="hobby/cafe.jpg" alt="Cafe scene">
+            </a>
+            <figcaption>Cafes</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/food 2.jpg">
+                <img src="hobby/food 2.jpg" alt="Food photography 1">
+            </a>
+            <figcaption>Food</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/food 3.jpg">
+                <img src="hobby/food 3.jpg" alt="Food photography 2">
+            </a>
+            <figcaption>Delicious Moments</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/food.jpg">
+                <img src="hobby/food.jpg" alt="Food photography 3">
+            </a>
+            <figcaption>More Food</figcaption>
+        </figure>
+    </section>
+
+    <section class="video">
+        <h2>🎥 My Favorite Videos</h2>
+        <p>Keep calm and pretend this was planned.</p>
+        <ul>
+            <td>
+            <video controls height="500">
+                <source src="images/pantai pd.mp4" type ="video/mp4">
+                <source src="images/pantai pd.mp4" type ="video/ogg">
+                Your browser doesn not support the video element.
+            </video>
+            </td>
+
+            <td>
+            <video controls height="500">
+                <source src="images/sunset pd.mp4" type ="video/mp4">
+                <source src="images/sunset pd.mp4" type ="video/ogg">
+                Your browser doesn not support the video element.
+            </video>
+            </td>
+
+            <td>
+            <video controls height="500">
+                <source src="images/turtle.mp4" type ="video/mp4">
+                <source src="images/turtle.mp4" type ="video/ogg">
+                Your browser doesn not support the video element.
+            </video>
+            </td>
+        </ul>
+    </section>
+
+    <section class="note">
+        <h2>Golden Hour Serenity</h2>
+    </section>
+    
+    <div class="section-images">
+        <figure>
+            <a href="hobby/sea.jpg">
+                <img src="hobby/sea.jpg" alt="Sea at sunset">
+            </a>
+            <figcaption>Sunset & Sea</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/sunset 2.jpg">
+                <img src="hobby/sunset 2.jpg" alt="Sunset over water">
+            </a>
+            <figcaption>Golden Hour</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/perlis.jpg">
+                <img src="hobby/perlis.jpg" alt="Perlis landscape">
+            </a>
+            <figcaption>Landscape</figcaption>
+        </figure>
+    </div>
+    
+    <section class="note">
+        <p>This is one of my favourite photos in my gallery. This picture captures a calm and beautiful moment by the sea during sunset. The golden light reflecting on the water and the soft waves create a peaceful and relaxing feeling. I love how the sky changes colours — from warm orange to night scenery — showing the beauty of nature's transitions. These images represent simple yet meaningful moments that I enjoy capturing through my photography hobby.</p>
+    </section>
+
+    <section class="note">
+        <h2>A Sky Painted in Peace</h2>
+    </section>
+    
+    <div class="section-images">
+        <figure>
+            <a href="hobby/sky I.jpg">
+                <img src="hobby/sky I.jpg" alt="Sky with light rays">
+            </a>
+            <figcaption>Light Rays</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/awan.jpg">
+                <img src="hobby/awan.jpg" alt="Cloud formations">
+            </a>
+            <figcaption>Clouds</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/pantai.jpg">
+                <img src="hobby/pantai.jpg" alt="Beach sky">
+            </a>
+            <figcaption>Beach Sky</figcaption>
+        </figure>
+    </div>
+    
+    <section class="note">
+        <p>This photo captures the serene beauty of the sky as sunlight gently pierces through a blanket of scattered clouds. The soft rays create a peaceful glow and calmness amidst the ever-changing sky. It reminds us that even behind the clouds, the sun continues to shine — a quiet reflection of strength and beauty in nature's simplicity. This image is special to me because it represents the tranquility I seek through my photography hobby.</p>
+    </section>
+
+    <section class="note">
+        <h2>Journey Under the Blue Sky</h2>
+    </section>
+    
+    <div class="section-images">
+        <figure>
+            <a href="hobby/library .jpg">
+                <img src="hobby/library .jpg" alt="Library under blue sky">
+            </a>
+            <figcaption>Library</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/rail.jpg">
+                <img src="hobby/rail.jpg" alt="Railway scene">
+            </a>
+            <figcaption>Railway</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/ipoh.jpg">
+                <img src="hobby/ipoh.jpg" alt="Ipoh travel photo">
+            </a>
+            <figcaption>Ipoh</figcaption>
+        </figure>
+    </div>
+    
+    <section class="note">
+        <p>One of my favourite things about travelling is the opportunity to explore and capture moments through my camera. Each photo holds a memory — a glimpse of the places I've been and the experiences I've had. Whether it's a bustling cityscape or a quiet countryside, I love how photography allows me to preserve these memories and share them with others. Looking back at these images always brings a smile to my face and reminds me of the joy of discovery that comes with every journey.</p>
+    </section>
+
+    <section class="note">
+        <h2>Delicious Moments Captured</h2>
+    </section>
+    
+    <div class="section-images">
+        <figure>
+            <a href="hobby/bask bear.jpg">
+                <img src="hobby/bask bear.jpg" alt="Dessert photo">
+            </a>
+            <figcaption>Dessert</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/chicken.jpg">
+                <img src="hobby/chicken.jpg" alt="Chicken dish">
+            </a>
+            <figcaption>Chicken</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/mykori.jpg">
+                <img src="hobby/mykori.jpg" alt="MyKori dessert">
+            </a>
+            <figcaption>MyKori</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/mee kari.jpg">
+                <img src="hobby/mee kari.jpg" alt="Mee kari dish">
+            </a>
+            <figcaption>Mee Kari</figcaption>
+        </figure>
+        <figure>
+            <a href="hobby/llao llao.jpg">
+                <img src="hobby/llao llao.jpg" alt="Llao Llao dessert">
+            </a>
+            <figcaption>Llao Llao</figcaption>
+        </figure>
+    </div>
+    
+    <section class="note">
+        <p>Food photography is another hobby of mine that I truly enjoy. There's something special about capturing the vibrant colours, textures, and details of a delicious dish. Through my lens, I aim to showcase not just the food itself but also the artistry and care that goes into its preparation. Each photo tells a story of flavour and creativity, inviting viewers to appreciate the culinary delights that bring joy to our lives.</p>
+    </section>
+<footer>
+    <p>&copy; 2025 Nadrah Izyan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cat - Nadrah Izyan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cat-section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .cat-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .cat-gallery a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .cat-gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            filter: brightness(1.1) contrast(1.05);
+        }
+
+        .cat-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .cat-caption {
+            color: #666;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:600px){
+            .cat-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Papacat's World!</h1>
+    <p>Discover Papacat's playful journey and see what exciting things he finds along the way</p>
+</header>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about_me.html">About</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="family.html">Family</a>
+    <a href="cat.html">Cat</a>
+    <a href="email.html">Contact</a>
+</nav>
+
+<section class="cat-section">
+    <h2>🐱 Meet Papacat — your curious little guide to learning and exploring!</h2>
+    <p>Meet Papacat — a lively, curious cat who brings joy and excitement everywhere he goes. Playful and cheerful, he loves exploring, finding hidden treasures, and sharing fun moments with everyone he meets. With a heart full of curiosity and a spirit for adventure, Papacat's journey is full of surprises and smiles. Join him and experience the world through his playful eyes!</p>
+
+    <div class="cat-gallery">
+        <a href="cat/papacat bawah meja.jpg"><img src="cat/papacat bawah meja.jpg" alt="Papacat"></a>
+        <a href="cat/papacat kuaters.jpg"><img src="cat/papacat kuaters.jpg" alt="Papacat"></a>
+        <a href="cat/papacat putrajaya.jpg"><img src="cat/papacat putrajaya.jpg" alt="Papacat"></a>
+        <a href="cat/papacat last.jpg"><img src="cat/papacat last.jpg" alt="Papacat"></a>
+        <a href="cat/papacat .jpeg"><img src="cat/papacat .jpeg" alt="Papacat"></a>
+        <a href="cat/papacat laptop.jpg"><img src="cat/papacat laptop.jpg" alt="Papacat"></a>
+    </div>
+
+    <p>Papacat may no longer walk beside us, but his spirit, curiosity, and playful moments will forever live in our hearts. We miss him dearly every day.</p>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Nadrah Izyan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
